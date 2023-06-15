@@ -16,7 +16,7 @@ h2 {
 	margin: 5px;
 	font-family: cursive;
 	color: #3f3faf;
-	background-color: linear-gradient(to right, white, #ffefaf);
+	background: linear-gradient(to right, white, #ffefaf);
 }
 
 div#zentai {

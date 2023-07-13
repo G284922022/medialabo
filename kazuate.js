@@ -6,14 +6,10 @@ let kaisu = 0;
 // 予想を4回実行する
 // 将来以下の hantei(); の4回の呼び出しを全て削除する
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
-kaisu ++
-hantei();
-kaisu ++;
-hantei();
-kaisu ++
-hantei();
-kaisu ++
-hantei();
+//hantei();
+//hantei();
+//hantei();
+//hantei();
 
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
@@ -22,7 +18,9 @@ function hantei() {
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   //for(let i = 1;i<=4;i++){
+    kaisu ++;
     console.log(kaisu+'回目の予想'+yoso);
+    
     if(kaisu>=4){
         if(kotae===yoso&&kaisu===4){
             console.log("正解です。おめでとう!");

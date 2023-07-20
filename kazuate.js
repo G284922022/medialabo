@@ -37,20 +37,20 @@ function hantei() {
         }else{
           re = ("正解は "+kotae+"でした。すでにゲームは終わっています。");
         }
-      }else if(yoso===kotae){
-        re = ("正解です。おめでとう!");
-      }else if(kaisu===3){
+    }else if(yoso===kotae){
+      re = ("正解です。おめでとう!");
+    }else if(kaisu===3){
         if(kotae===yoso){
             re = ("正解です。おめでとう!");
         }else{
             re = ("まちがい．残念でした答えは "+kotae+" です。");
         }
-      }else if(kotae>yoso){
+    }else if(kotae>yoso){
         re = ("まちがい．答えはもっと大きいですよ");
-      }else if(kotae<yoso){
+    }else if(kotae<yoso){
         re = ("まちがい．答えはもっと小さいですよ");
-      }
-   //}
+    }
+      //}
    document.getElementById('result').textContent = re;
   // 課題3-1における出力先はコンソール
   

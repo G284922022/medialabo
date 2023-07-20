@@ -4,12 +4,26 @@
     <meta charset="utf-8">
     <title>My test page</title>
     <link rel="stylesheet" href="project_css.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="weather.js" defer></script>
   </head>
   <body>
-    <label for="ken">検索: </label>
-    <input type="search" name = "ken" id = "ken" size = "10">
-    <button id = "kensaku">表示</button>
+    <select name = 'weather' id = "weather">
+      <option value = "">都市名を入力</option>
+      <option value = "">カイロ(エジプト)</option>
+      <option value = "">モスクワ(ロシア)</option>
+      <option value = "">ヨハネスブルク(南アフリカ)</option>
+      <option value = "">北京(中国)</option>
+      <option value="">東京</option>
+      <option value = "">シンガポール</option>
+      <option value = "">シドニー(オーストラリア)</option>
+      <option value = "">ロンドン(イギリス)</option>
+      <option value = "">パリ(フランス)</option>
+      <option value = "">リオデジャネイロ(ブラジル)</option>
+      <option value = "">ニューヨーク(アメリカ合衆国)</option>
+      <option value = "">ロサンゼルス(アメリカ合衆国ß)</option>
+    </select>
+    <button id = "kensaku">検索</button>
     <div id="result"></div>
   </body>
 </html>

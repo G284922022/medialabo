@@ -32,24 +32,21 @@ function hantei() {
 
     var re = document.querySelector('span#result');
     if(kaisu>=4){
-        if(kotae===yoso&&kaisu===4){
-            re = ("正解です。おめでとう!");
-        }else{
-          re = ("正解は "+kotae+"でした。すでにゲームは終わっています。");
-        }
-    }else if(yoso===kotae){
-      re = ("正解です。おめでとう!");
+        re = ("正解は "+kotae+"でした。すでにゲームは終わっています。");
     }else if(kaisu===3){
-        if(kotae===yoso){
+        if(kotae==yoso){
             re = ("正解です。おめでとう!");
         }else{
             re = ("まちがい．残念でした答えは "+kotae+" です。");
         }
+    }else if(yoso==kotae){
+        re = ("正解です。おめでとう!");
     }else if(kotae>yoso){
         re = ("まちがい．答えはもっと大きいですよ");
     }else if(kotae<yoso){
         re = ("まちがい．答えはもっと小さいですよ");
     }
+    console.log(yoso);
       //}
    document.getElementById('result').textContent = re;
   // 課題3-1における出力先はコンソール
